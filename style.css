@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #305eb3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #dbd9d9;
+    width: 90vmin;
+    margin: 50px auto;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+    overflow: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #305eb3;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #305eb3;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 15px 0;
+    width: 25%;
+    background-color: #305eb3;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #405eb3;
+}
+
+button:active {
+    background-color: #505eb3;
+}
+
+#dark-mode-btn {
+    padding: 10px 20px;
+    background-color: #305eb3;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container.dark-mode {
+    background-color: #4d4747;
+}
+
+.container.dark-mode .result button,
+.container.dark-mode .result p {
+    color: #fff;
+}
+
+.result {
+    position: relative;
+}
+
+.result h3 {
+    font-size: 30px;
+    color: #205eb3;
+}
+
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.result button {
+    background-color: transparent;
+    color: #205eb3;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.result button:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #9ea6ec;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+
+.word-meaning {
+    color: #575a7b;
+}
+
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #205eb3;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.remove {
+    color: red !important;
+}
+
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
